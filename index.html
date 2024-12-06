@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony Walkman - The Ultimate Portable Music Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label, form input, form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sony Walkman</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#corporate">Corporate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>The Original Portable Music Player</h2>
+        <img src="images/sony-original-walkman-tps-l2.0.jpg" alt="Sony Walkman TPS-L2">
+        <p>Introducing the Sony Walkman TPS-L2 - the revolutionary portable music player that allows you to take your music wherever you go!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Why the Sony Walkman is a Game Changer</h2>
+        <p>The Sony Walkman revolutionized music by allowing people to listen to their favorite tunes on the go, anywhere and anytime. The TPS-L2 model is the first-ever portable cassette player that transformed the way we experience music.</p>
+        <img src="images/sony-original-walkman-tps-l2.0.jpg" alt="Sony Walkman TPS-L2">
+    </section>
+
+    <!-- Promotion Section -->
+    <section id="promotion">
+        <h2>Today's Special Offer</h2>
+        <button onclick="showOffer()">Click for Today's Special Offer</button>
+        <p id="offer"></p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Submit Your Feedback</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support">
+        <h2>Support</h2>
+        <p>If you need any assistance with your Sony Walkman, please reach out to our support team. We’re here to help!</p>
+    </section>
+
+    <!-- Corporate Section -->
+    <section id="corporate">
+        <h2>About Sony Corporation</h2>
+        <p>Sony Corporation is a global leader in technology and innovation, committed to delivering high-quality entertainment experiences worldwide.</p>
+        <img src="images/sony_logo_PNG2.png" alt="Sony Logo">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sony Corporation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to show special offer on the promotion page
+        function showOffer() {
+            document.getElementById("offer").innerText = "Get 10% off your first Sony Walkman purchase!";
+        }
+
+        // JavaScript for feedback form submission
+        document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            document.getElementById("confirmationMessage").innerText = "Thank you for your feedback!";
+        });
+    </script>
+
+</body>
+</html>
